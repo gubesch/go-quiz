@@ -1,0 +1,26 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: go-quiz
+  namespace: default
+spec:
+  commonName: goquiz.decrinis.com
+  dnsNames:
+  - goquiz.decrinis.com
+  duration: 2160h0m0s
+  issuerRef:
+    group: cert-manager.io
+    kind: ClusterIssuer
+    name: letsencrypt
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+  renewBefore: 360h0m0s
+  secretName: go-quiz-tls
+  subject:
+    organizations:
+    - andreas
+  usages:
+  - server auth
+  - client auth
