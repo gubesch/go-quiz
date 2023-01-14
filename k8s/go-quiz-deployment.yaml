@@ -46,7 +46,7 @@ spec:
               value: "8080"
             - name: LISTEN_ADDR
               value: 0.0.0.0
-          image: adcrinis/go-quiz:20221202-1
+          image: adcrinis/go-quiz:202301141
           name: go-quiz
           ports:
             - containerPort: 8080
