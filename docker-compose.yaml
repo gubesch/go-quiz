@@ -13,7 +13,7 @@ services:
     volumes:
       - mysql:/var/lib/mysql
 
-  migrations:
+  go-quiz:
     build: .
     command:
       - -c
