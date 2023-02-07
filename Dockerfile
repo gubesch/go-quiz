@@ -7,7 +7,7 @@ RUN apk add git gcc
 
 # Go modules
 ENV GO111MODULE=on
-#RUN go mod tidy
+RUN go mod tidy
 RUN go mod download
 
 # Compile
