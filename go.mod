@@ -1,9 +1,9 @@
 module github.com/gubesch/go-quiz
 
-go 1.14
+go 1.16
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/golang-jwt/jwt/v4 v4.4.3
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/handlers v1.5.1
